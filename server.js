@@ -8,11 +8,18 @@ var axios = require("axios");
 
 var cheerio = require("cheerio");
 
+// var exphbs = require("express-handlebars");
+
 var db = require("./models");
 
 var PORT = 3000;
 
 var app = express();
+
+// Set Handlebars as the default templating engine.
+// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+// app.set("view engine", "handlebars");
+
 
 app.use(logger("dev"));
 // Parse request body as JSON
